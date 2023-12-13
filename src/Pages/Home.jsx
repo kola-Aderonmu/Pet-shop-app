@@ -48,13 +48,25 @@ const slides = [
   },
 ];
 
+const marqueeStyle = {
+  background: `url(${"https://images.unsplash.com/photo-1657070174397-569b53c68e29?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}) repeat-x`,
+  padding: "10px",
+  color: "#fff",
+  border: "none",
+  borderRadius: "5px"
+};
+
+
+
+
+
 const Home = () => {
   const dispatch = useDispatch();
 
   return (
     <>
       <div className="m-4">
-        <Marquee>
+        <Marquee style={marqueeStyle}>
           {slides.map((slide, index) => (
             <div key={index} className=" font-mono mx-4">
               {slide.comment}

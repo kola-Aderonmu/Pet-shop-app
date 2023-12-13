@@ -9,12 +9,14 @@ const About = () => {
   return (
     <>
       <div
-        className=" flex items-center justify-around mt-0 p-10 font-semibold rounded-2xl shadow-2xl"
+        className=" flex items-center justify-around mt-0 p-8 font-semibold rounded-lg shadow-2xl"
         style={{
-          backgroundColor: "#96c8a2",
+          backgroundColor: "#ffe4b5",
         }}
       >
-        <h2 className="text-white ml-8 text-5xl ">About Us</h2>
+        <h2 className="text-white ml-8 text-5xl hover:text-yellow-300">
+          About Us
+        </h2>
         <Link to="/">
           <HomeOutlined
             style={{
@@ -22,7 +24,7 @@ const About = () => {
               outline: "none",
               textDecoration: "none",
               border: "none",
-              cursor: "alias"
+              cursor: "alias",
             }}
           />
         </Link>
